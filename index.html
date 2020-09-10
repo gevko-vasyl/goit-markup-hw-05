@@ -56,7 +56,9 @@
       <!--Герой сайту-->
       <section class="hero-section">
         <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-        <a href="" class="hero-button">Заказать услугу</a>
+        <button type="button" class="hero-button" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
       <!--Наші переваги-->
       <section class="section">
@@ -120,34 +122,32 @@
           <h2 class="projects-title">Чем мы занимаемся</h2>
           <ul class="projects list">
             <li class="item">
-              <a href="">
-                <img
-                  src="./images/project1.jpg"
-                  alt="Робоче місце"
-                  width="370"
-                  height="294"
-                />
-              </a>
+              <img
+                src="./images/project1.jpg"
+                alt="Робоче місце"
+                width="370"
+                height="294"
+              />
+
+              <p class="item-text">Десктопные приложения</p>
             </li>
             <li class="item">
-              <a href="">
-                <img
-                  src="./images/project2.jpg"
-                  alt="Жінка працює за ноутом"
-                  width="370"
-                  height="294"
-                />
-              </a>
+              <img
+                src="./images/project2.jpg"
+                alt="Жінка працює за ноутом"
+                width="370"
+                height="294"
+              />
+              <p class="item-text">Мобильные приложения</p>
             </li>
             <li class="item">
-              <a href="">
-                <img
-                  src="./images/project3.jpg"
-                  alt="Робота з планшетом"
-                  width="370"
-                  height="294"
-                />
-              </a>
+              <img
+                src="./images/project3.jpg"
+                alt="Робота з планшетом"
+                width="370"
+                height="294"
+              />
+              <p class="item-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -386,5 +386,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/sprite.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
